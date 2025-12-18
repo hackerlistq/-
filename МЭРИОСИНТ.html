@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mariosint — Лайфхаки. Обучение. Будущее.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #1A102D;
+      color: #E0E0E0;
+      font-family: 'Space Grotesk', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      overflow-x: hidden;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      animation: fadeIn 1.2s ease-out forwards;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      color: #FF2D87;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      color: #E0E0E0;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2.5rem;
+      color: #B0B0B0;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact {
+      margin: 2.5rem 0;
+    }
+
+    .contact p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      color: #E0E0E0;
+    }
+
+    .telegram-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #FF2D87;
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .telegram-link:hover {
+      text-decoration: underline;
+    }
+
+    .telegram-icon {
+      width: 24px;
+      height: 24px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23FF2D87' d='M446.7 98.6l-67.6 309.1c-5.9 26.4-30.1 43.3-56.5 37.4L152.4 397.9l-23.8 86.2c-3.6 12.8-16.9 20.1-29.7 16.5L9.6 477c-19.5-5.4-21.7-30.6-3.9-38.4l337.3-146.3-142.8-129.7c-11.7-10.6-10.8-28.5 1.9-37.5l142-101.2c21-15.1 49.2-7.2 59.2 16.4z'%3E%3C/path%3E%3C/svg%3E");
+      background-size: cover;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      margin: 10px 10px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #fff;
+      background-color: #FF2D87;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #e52875;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(255, 45, 135, 0.2);
+    }
+
+    .support {
+      margin: 3rem 0;
+    }
+
+    .support p {
+      font-size: 1.2rem;
+      color: #E0E0E0;
+      margin-bottom: 1rem;
+    }
+
+    .footer {
+      margin-top: auto;
+      padding: 2rem 0;
+      font-size: 0.9rem;
+      color: #777;
+      width: 100%;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.8rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p, .contact p, .support p {
+        font-size: 1rem;
+      }
+
+      .btn {
+        padding: 12px 28px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mariosint</h1>
+    <h2>Лайфхаки. Обучение. Будущее. Скоро возвращаемся в Telegram</h2>
+    
+    <p>
+      Mariosint — это проект о лайфхаках, продуктивности и обучении. 
+      Раньше мы были в Telegram, но канал был удалён по техническим причинам. 
+      Сейчас я собираюсь силы для нового старта. Финансово тяжело, но я верю — 
+      скоро всё получится. Следите за обновлениями. Новый запуск — уже скоро.
+    </p>
+
+    <div class="contact">
+      <p>Связь и сотрудничество:</p>
+      <a href="https://t.me/fuckmari" class="telegram-link" target="_blank">
+        <span class="telegram-icon"></span>
+        @fuckmari
+      </a>
+      <br />
+      <a href="https://t.me/fuckmari" class="btn" target="_blank">Написать в Telegram</a>
+    </div>
+
+    <div class="support">
+      <p>Помоги проекту выжить</p>
+      <button class="btn" disabled>Поддержать финансово</button>
+      <p style="color: #B0B0B0; font-size: 0.95rem; margin-top: 0.5rem;">
+        Скоро будет доступен сбор
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 Mariosint. Возвращаемся сильнее</p>
+  </div>
+</body>
+</html>
